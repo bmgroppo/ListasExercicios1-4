@@ -42,12 +42,58 @@ function exercicio5(){
  o Resto da Divisão de ${num1} / ${num2} = ${rest}\n`)
 }
 
-function exercicio6(){}
+function exercicio6(){
+    let nome = String(prompt("Digite o nome do Vendedor"));
+    let salario = Number(prompt("Qual salário fixo do Vendedor"))
+    let vendas = Number(prompt("Qual total de Vendas dele (R$)"));
+    let comissao = vendas*0.15
+    let = salarioFinal = salario + comissao
 
-function exercicio7(){}
+    alert(`O vendedor ${nome} com salário de R$ ${salario.toFixed(2)} e comissão de R$ ${comissao.toFixed(2)} deverá receber um total de R$ ${(salarioFinal.toFixed(2))}`)
 
-function exercicio8(){}
+}
 
-function exercicio9(){}
+function exercicio7(){
+    let preco = Number(prompt("Digite o valor do Produto"));
+    let parcelas = Number(prompt("Digite a quantidade de parcelas"));
+    let valorParcela = 0;
 
-function exercicio10(){}
+    if (parcelas<=10){
+        valorParcela = preco / parcelas;
+        alert(`O valor de cada parcela é R$ ${valorParcela.toFixed(2)}`);
+    }else{
+        alert("Quantidade de parcelas diferente de 10")
+    }
+}
+
+function exercicio8(){
+    let precoCusto = Number(prompt("Digite o preço de custo do produto:"));
+    let percentual = Number(prompt("Digite o percentual de acréscimo (%):"));
+    let precoVenda = precoCusto + (precoCusto * percentual / 100);
+    alert(`O valor de venda do produto é R$ ${precoVenda.toFixed(2)}`);
+}
+
+function exercicio9(){
+    let anos = Number(prompt("Informe sua idade em anos:"));
+    let meses = Number(prompt("Informe os meses além dos anos:"));
+    let dias = Number(prompt("Informe os dias além dos meses:"));
+    let totalDias = (anos * 365) + (meses * 30) + dias;
+    alert(`Sua idade expressa apenas em dias é: ${totalDias} dias.`);
+}
+
+function exercicio10(){
+    let Eleitores = Number(prompt("Digite o número total de eleitores do município:"));
+    let Brancos = Number(prompt("Digite o número de votos brancos:"));
+    let Nulos = Number(prompt("Digite o número de votos nulos:"));
+    let Validos = Number(prompt("Digite o número de votos válidos:"));
+
+    let percBrancos = (Brancos / Eleitores) * 100;
+    let percNulos = (Nulos / Eleitores) * 100;
+    let percValidos = (Validos / Eleitores) * 100;
+
+    alert(
+        `Percentual de votos brancos: ${percBrancos.toFixed(2)}%\n` +
+        `Percentual de votos nulos: ${percNulos.toFixed(2)}%\n` +
+        `Percentual de votos válidos: ${percValidos.toFixed(2)}%`
+    );
+}
