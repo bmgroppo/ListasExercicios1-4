@@ -111,3 +111,27 @@ function primos(){
     }
     alert(`Primos encontrados ${resultado}`)
 }
+
+function atendimento(){
+
+}
+
+function satisfacao(){
+
+}
+
+function media(){
+
+}
+
+function vendas(){
+
+}
+
+function verificaLista(){
+
+}
+
+function caixa(){
+    
+}
