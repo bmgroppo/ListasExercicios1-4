@@ -80,3 +80,62 @@ function exercicio9(){
     }
     document.writeln(`A soma dos pares de 0 a 500 é ${soma}`)
 }
+
+function exercicio10(){
+    for (let i=0; i<=15; i++){
+        document.writeln(`3 elevado à ${i} = ${3**i}<br>`)
+    }
+}
+
+function exercicio11(){
+    let base = Number(prompt("Digite a base para elevar à potência"))
+    let expoente = Number(prompt("Digite o expoente que deseja elevar"))
+
+    let resultado = base ** expoente
+
+    alert(`${base} elevado à ${expoente} = ${resultado}`)
+}
+
+function exercicio12() {
+    let numeros = [];
+    let entrada;
+
+    while (true) {
+        entrada = Number(prompt("Digite um número real (ou -1 para sair):"))
+        if (entrada === -1){
+            break
+        }
+        numeros.push(entrada);
+    }
+        let soma = 0;
+        let maior = numeros[0];
+        let menor = numeros[0];
+
+        for (let i = 0; i < numeros.length; i++) {
+            soma += numeros[i];
+            if (numeros[i] > maior) maior = numeros[i];
+            if (numeros[i] < menor) menor = numeros[i];
+        }
+        let media = soma / numeros.length;
+        alert(`Maior número: ${maior}\nMenor número: ${menor}\nMédia: ${media.toFixed(2)}`);
+}
+
+function exercicio13(){
+    for (let numero = 3; numero <= 6; numero++) {
+        document.writeln(`<strong>Tabuada do ${numero}:</strong><br>`);
+        
+        for (let i = 1; i <= 10; i++) {
+            document.writeln(`${numero} x ${i} = ${numero * i}<br>`);
+        }
+        
+        document.writeln(`<br>`);
+    }
+}
+
+function exercicio14(){
+    let fatorial = 0
+    for (let i = 0; i>=5; i++){
+        fatorial *= i
+    }
+    alert(`fatorial de 5 = ${fatorial}`)
+}
