@@ -139,3 +139,19 @@ function exercicio14(){
     }
     alert(`fatorial de 5 = ${fatorial}`)
 }
+
+function exercicio15(){
+    let anterior = 1
+    let atual = 1
+
+    document.writeln(`<strong>Série de Fibonacci (15 termos)</strong><br>`);
+    document.writeln(`${anterior}, ${atual}, `);
+
+    for (let i = 3; i <= 15; i++) { // Começa do 3º termo e vai até o 15º
+        let proximo = anterior + atual;
+        document.writeln(`${proximo}, `);
+        anterior = atual;
+        atual = proximo;
+    }
+}
+
