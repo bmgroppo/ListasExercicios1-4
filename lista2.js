@@ -6,15 +6,14 @@ function exercicio1(){
 function exercicio2(){
     let hora = Number(prompt("Informe a hora:"));
     let minuto = Number(prompt("Infome o minuto:"));
-    let tempoPadrao = 0;
-    let totalMinutos = (hora*60 + minuto)-tempoPadrao;
+    let totalMinutos = (hora*60 + minuto);
     alert(`Já se passaram ${totalMinutos} minutos desde 00:00h`);
 }
 
 function exercicio3(){
     let peso = Number(prompt("Informe seu peso em kg"));
     let altura = Number(prompt("Informe sua altura em metros"));
-    alert(`Seu peso é ${peso*100} gramas \ne sua altura é ${altura*100} centímetros `)
+    alert(`Seu peso é ${peso*1000} gramas \ne sua altura é ${altura*100} centímetros `)
 }
 
 function exercicio4(){
@@ -44,7 +43,7 @@ function exercicio5(){
 
 function exercicio6(){
     let nome = String(prompt("Digite o nome do Vendedor"));
-    let salario = Number(prompt("Qual salário fixo do Vendedor"))
+    let salario = Number(prompt("Qual salário fixo do Vendedor"));
     let vendas = Number(prompt("Qual total de Vendas dele (R$)"));
     let comissao = vendas*0.15
     let = salarioFinal = salario + comissao

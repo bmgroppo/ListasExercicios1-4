@@ -19,7 +19,7 @@ function exercicio2() {
 
 function exercicio2c(){
     let dolar = Number(prompt("Digite o valor do dólar:"));    
-    let real = dolar * 7.5; 
+    let real = dolar * 5.7; 
 
     document.writeln(`O valor do dólar em reais é: R$ ${real.toFixed(2)} <br>`);
 }
@@ -67,6 +67,7 @@ function exercicio8(){
     let num = Number(prompt("Digite um número"));
     let quadrado = num**2;
     let raiz = num**0.5;
+
 
     document.writeln(`O número é ${num}, o quadrado de ${num} é ${quadrado.toFixed(2)} e a raíz quadrada de ${num} é ${raiz.toFixed(2)}`)
 }

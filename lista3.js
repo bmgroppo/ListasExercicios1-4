@@ -62,7 +62,7 @@ function exercicio6(){
 function exercicio7(){
     let cateto1 = Number(prompt("Digite o valor do primeiro cateto:"));
     let cateto2 = Number(prompt("Digite o valor do segundo cateto:"));
-    let hipotenusa = ( (cateto1 ** 2) + (cateto2 ** 2) ) ** 0.5;
+    let hipotenusa = (( (cateto1 ** 2) + (cateto2 ** 2) )) ** (1/2);
     alert(`O valor da hipotenusa é ${hipotenusa.toFixed(2)}`);
 }
 
@@ -72,7 +72,7 @@ function exercicio8(){
 
     let perimetro = 2 * (base + altura);
     let area = base * altura;
-    let diagonal = Math.sqrt(base ** 2 + altura ** 2);
+    let diagonal = (base ** 2 + altura ** 2) ** (1/2);
 
     alert(
         `Perímetro: ${perimetro.toFixed(2)} cm\n` +
