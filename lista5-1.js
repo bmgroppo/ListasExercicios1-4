@@ -45,10 +45,9 @@ function exercicio6() {
     alert("Número diferente do intervalo de 1 a 50");
     return;
   } else {
-    let res = num
-    while(res *3 < 250){
-        document.writeln(`${res} x 3 = ${res *3}<br>`)
-        res *=3
+    while((num * 3) < 250){
+        document.writeln(`${num} x 3 = ${num *3}<br>`)
+        num ++
     }
   }
 }
